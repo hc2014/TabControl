@@ -1,0 +1,11 @@
+E:\Demo\圆角tabpage\CSCustomTabControlDemo\bin\Debug\CSCustomTabControlDemo.exe
+E:\Demo\圆角tabpage\CSCustomTabControlDemo\bin\Debug\CSCustomTabControlDemo.pdb
+E:\Demo\圆角tabpage\CSCustomTabControlDemo\bin\Debug\JacksonSoft.CustomTabControl.dll
+E:\Demo\圆角tabpage\CSCustomTabControlDemo\bin\Debug\JacksonSoft.CustomTabControl.pdb
+E:\Demo\圆角tabpage\CSCustomTabControlDemo\obj\x86\Debug\CSCustomTabControlDemo.csproj.AssemblyReference.cache
+E:\Demo\圆角tabpage\CSCustomTabControlDemo\obj\x86\Debug\CSCustomTabControlDemo.MainForm.resources
+E:\Demo\圆角tabpage\CSCustomTabControlDemo\obj\x86\Debug\CSCustomTabControlDemo.csproj.GenerateResource.cache
+E:\Demo\圆角tabpage\CSCustomTabControlDemo\obj\x86\Debug\CSCustomTabControlDemo.csproj.CoreCompileInputs.cache
+E:\Demo\圆角tabpage\CSCustomTabControlDemo\obj\x86\Debug\CSCustomTabControlDemo.csproj.CopyComplete
+E:\Demo\圆角tabpage\CSCustomTabControlDemo\obj\x86\Debug\CSCustomTabControlDemo.exe
+E:\Demo\圆角tabpage\CSCustomTabControlDemo\obj\x86\Debug\CSCustomTabControlDemo.pdb
