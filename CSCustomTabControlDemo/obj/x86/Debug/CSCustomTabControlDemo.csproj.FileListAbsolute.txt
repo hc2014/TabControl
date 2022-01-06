@@ -9,3 +9,16 @@ E:\Demo\圆角tabpage\CSCustomTabControlDemo\obj\x86\Debug\CSCustomTabControlDem
 E:\Demo\圆角tabpage\CSCustomTabControlDemo\obj\x86\Debug\CSCustomTabControlDemo.csproj.CopyComplete
 E:\Demo\圆角tabpage\CSCustomTabControlDemo\obj\x86\Debug\CSCustomTabControlDemo.exe
 E:\Demo\圆角tabpage\CSCustomTabControlDemo\obj\x86\Debug\CSCustomTabControlDemo.pdb
+E:\Demo\TabControl\CSCustomTabControlDemo\bin\Debug\CSCustomTabControlDemo.exe
+E:\Demo\TabControl\CSCustomTabControlDemo\bin\Debug\CSCustomTabControlDemo.pdb
+E:\Demo\TabControl\CSCustomTabControlDemo\bin\Debug\JacksonSoft.CustomTabControl.dll
+E:\Demo\TabControl\CSCustomTabControlDemo\bin\Debug\JacksonSoft.CustomTabControl.pdb
+E:\Demo\TabControl\CSCustomTabControlDemo\obj\x86\Debug\CSCustomTabControlDemo.MainForm.resources
+E:\Demo\TabControl\CSCustomTabControlDemo\obj\x86\Debug\CSCustomTabControlDemo.csproj.GenerateResource.cache
+E:\Demo\TabControl\CSCustomTabControlDemo\obj\x86\Debug\CSCustomTabControlDemo.csproj.CoreCompileInputs.cache
+E:\Demo\TabControl\CSCustomTabControlDemo\obj\x86\Debug\CSCustomTabControlDemo.csproj.CopyComplete
+E:\Demo\TabControl\CSCustomTabControlDemo\obj\x86\Debug\CSCustomTabControlDemo.exe
+E:\Demo\TabControl\CSCustomTabControlDemo\obj\x86\Debug\CSCustomTabControlDemo.pdb
+E:\Demo\TabControl\CSCustomTabControlDemo\obj\x86\Debug\CSCustomTabControlDemo.csproj.AssemblyReference.cache
+E:\Demo\TabControl\CSCustomTabControlDemo\obj\x86\Debug\CSCustomTabControlDemo.Form1.resources
+E:\Demo\TabControl\CSCustomTabControlDemo\obj\x86\Debug\CSCustomTabControlDemo.Properties.Resources.resources

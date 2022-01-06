@@ -125,7 +125,11 @@ namespace System.Windows.Forms
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1051:DoNotDeclareVisibleInstanceFields")]
 		protected Color _CloserColor = Color.DarkGray;
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1051:DoNotDeclareVisibleInstanceFields")]
-		
+
+		protected Color _SelectCloserColor = Color.White;
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1051:DoNotDeclareVisibleInstanceFields")]
+
+
 		protected Color _FocusColor = Color.Empty;
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1051:DoNotDeclareVisibleInstanceFields")]
 		
@@ -238,13 +242,13 @@ namespace System.Windows.Forms
 		protected virtual Brush GetTabBackgroundBrush(int index){
 			LinearGradientBrush fillBrush = null;
 
-			//	Capture the colours dependant on selection state of the tab
-			Color dark = Color.FromArgb(207, 207, 207);
-			Color light = Color.FromArgb(242, 242, 242);
-			
+            //	Capture the colours dependant on selection state of the tab
+            Color dark = Color.FromArgb(207, 207, 207);
+            Color light = Color.FromArgb(242, 242, 242);
+
 			if (this._TabControl.SelectedIndex == index) {
-				dark = SystemColors.ControlLight;
-				light = SystemColors.Window;
+				dark = Color.Blue;
+				light = Color.Blue;
 			} else if (!this._TabControl.TabPages[index].Enabled){
 				light = dark;
 			} else if (this._HotTrack && index == this._TabControl.ActiveIndex){
@@ -540,12 +544,26 @@ namespace System.Windows.Forms
 				this._TabControl.Invalidate();
 			}
 		}
+
+		[Category("Appearance"), DefaultValue(typeof(Color), "DarkGrey")]
+		public Color SelectCloserColor
+		{
+			get { return this._SelectCloserColor; }
+			set
+			{
+				this._SelectCloserColor = value;
+				this._TabControl.Invalidate();
+			}
+		}
+
 		
+
 		#endregion
 
 		#region Painting
-		
-		public void PaintTab(int index, Graphics graphics){
+
+		public void PaintTab(int index, Graphics graphics, bool selectFlag)
+		{
 			using (GraphicsPath tabpath = this.GetTabBorder(index)) {
 				using (Brush fillBrush = this.GetTabBackgroundBrush(index)) {
 					//	Paint the background
@@ -555,15 +573,14 @@ namespace System.Windows.Forms
 					if (this._TabControl.Focused){
 						this.DrawTabFocusIndicator(tabpath, index, graphics);
 					}
-
 					//	Paint the closer
-					this.DrawTabCloser(index, graphics);
+					this.DrawTabCloser(index, graphics, selectFlag);
 
 				}
 			}
 		}
 		
-		protected virtual void DrawTabCloser(int index, Graphics graphics){
+		protected virtual void DrawTabCloser(int index, Graphics graphics,bool selectFlag){
 			if (this._ShowTabCloser){
 				Rectangle closerRect = this._TabControl.GetTabCloserRect(index);
 				graphics.SmoothingMode = SmoothingMode.AntiAlias;
@@ -573,9 +590,21 @@ namespace System.Windows.Forms
 							graphics.DrawPath(closerPen, closerPath);
 						}
 					} else {
-						using (Pen closerPen = new Pen(this._CloserColor)){
-							graphics.DrawPath(closerPen, closerPath);
+						if (selectFlag)
+						{
+							using (Pen closerPen = new Pen(this._SelectCloserColor))
+							{
+								graphics.DrawPath(closerPen, closerPath);
+							}
 						}
+						else
+						{
+							using (Pen closerPen = new Pen(this._CloserColor))
+							{
+								graphics.DrawPath(closerPen, closerPath);
+							}
+						}
+						
 					}
 					
 				}

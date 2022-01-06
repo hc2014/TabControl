@@ -92,7 +92,7 @@ namespace System.Windows.Forms
 			}
 		}
 
-		protected override void DrawTabCloser(int index, Graphics graphics){
+		protected override void DrawTabCloser(int index, Graphics graphics, bool selectFlag){
 			if (this._ShowTabCloser){
 				Rectangle closerRect = this._TabControl.GetTabCloserRect(index);
 				graphics.SmoothingMode = SmoothingMode.AntiAlias;

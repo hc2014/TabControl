@@ -4,3 +4,8 @@ E:\Demo\圆角tabpage\CustomTabControl\obj\x86\Debug\CustomTabControl.csproj.Ass
 E:\Demo\圆角tabpage\CustomTabControl\obj\x86\Debug\CustomTabControl.csproj.CoreCompileInputs.cache
 E:\Demo\圆角tabpage\CustomTabControl\obj\x86\Debug\JacksonSoft.CustomTabControl.dll
 E:\Demo\圆角tabpage\CustomTabControl\obj\x86\Debug\JacksonSoft.CustomTabControl.pdb
+E:\Demo\TabControl\CustomTabControl\bin\Debug\JacksonSoft.CustomTabControl.dll
+E:\Demo\TabControl\CustomTabControl\bin\Debug\JacksonSoft.CustomTabControl.pdb
+E:\Demo\TabControl\CustomTabControl\obj\x86\Debug\CustomTabControl.csproj.CoreCompileInputs.cache
+E:\Demo\TabControl\CustomTabControl\obj\x86\Debug\JacksonSoft.CustomTabControl.dll
+E:\Demo\TabControl\CustomTabControl\obj\x86\Debug\JacksonSoft.CustomTabControl.pdb

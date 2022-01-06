@@ -829,14 +829,13 @@ namespace System.Windows.Forms
 				if (this._Style != TabStyle.None){
 					
 					//	Paint the tab
-					this._StyleProvider.PaintTab(index, graphics);
+					this._StyleProvider.PaintTab(index, graphics,index==this.SelectedIndex);
 					
 					//	Draw any image
 					this.DrawTabImage(index, graphics);
 
 					//	Draw the text
 					this.DrawTabText(index, graphics);
-
 				}
 				
 				//	Paint the border
@@ -867,7 +866,10 @@ namespace System.Windows.Forms
 			graphics.SmoothingMode = SmoothingMode.HighQuality;
 			graphics.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
 			Rectangle tabBounds = this.GetTabTextRect(index);
-			
+
+			//graphics.FillRectangle(Brushes.Blue, tabBounds);
+
+
 			if (this.SelectedIndex == index) {
 				using (Brush textBrush = new SolidBrush(this._StyleProvider.TextColorSelected)){
 					graphics.DrawString(this.TabPages[index].Text, this.Font, textBrush, tabBounds, this.GetStringFormat());
